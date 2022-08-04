@@ -1,0 +1,19 @@
+# Full path to the System Under Test (or Java Main Class name)
+executable:$TEXTTEST_ROOT/searchreplace.py
+
+# Naming scheme to use for files for stdin,stdout and stderr
+filename_convention_scheme:standard
+
+# Expanded name to use for application
+full_name:TextTest Koans Lesson 2
+
+copy_test_path:fish.txt
+
+[collate_file]
+edited_fish:fish.txt
+[end]
+
+[run_dependent_text]
+stdout:(running at ).*${REPLACE running at <date>}
+stdout:{INTERNAL writedir}{REPLACE <sandbox>}
+[end]

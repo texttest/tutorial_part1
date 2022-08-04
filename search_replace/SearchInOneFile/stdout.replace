@@ -1,0 +1,9 @@
+searchreplace.py running at 04Aug15:02:34
+Replacing 'dog' with 'cat'
+Replacing in C:\Users\Administrator\.texttest\tmp\replace.04Aug150232.2204\replace\SearchInOneFile\fish.txt
+1c1
+< dogfish
+---
+> catfish
+OK to commit?
+Not editing the file.
