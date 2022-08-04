@@ -26,12 +26,12 @@ def init_logging():
 if __name__ == "__main__":
     logger = init_logging()
 
-    logger.info("Initializing AcmeDB ...")
+    logger.info("Initializing Acme Service ...")
     time.sleep(0.25)
     logger.info("Setting up x y and z")
     time.sleep(0.25)
     logger.info("Running self checks")
     time.sleep(0.1)
-    logger.info("AcmeDB Started! process_id=%s" % os.getpid())
+    logger.info("Acme Service Started! process_id=%s" % os.getpid())
     logger.info("Ready to accept connections")
 

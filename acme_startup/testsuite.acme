@@ -1,1 +1,3 @@
-smoke
+# smoke (automatically commented due to no test directory being found)
+
+StartService
