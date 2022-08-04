@@ -8,7 +8,10 @@ import tarfile
 def main():
     print("about to gather logs", file=sys.stderr)
 
-    log_location = os.path.join("~", "logs")
+    if "LOG_LOCATION" in os.environ.keys():
+        log_location = os.environ["LOG_LOCATION"]
+    else:
+        log_location = os.path.join("~", "logs")
 
     logfile1_path = os.path.join(log_location, "app1", "errors.log")
     logfile2_path = os.path.join(log_location, "app2", "errors.log")

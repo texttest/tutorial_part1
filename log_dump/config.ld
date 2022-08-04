@@ -1,5 +1,5 @@
 # Full path to the System Under Test (or Java Main Class name)
-executable:${TEXTTEST_HOME}/puzzle9/log_dump.py
+executable:${TEXTTEST_ROOT}/log_dump.py
 interpreter:python
 
 # Naming scheme to use for files for stdin,stdout and stderr

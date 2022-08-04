@@ -5,5 +5,5 @@ executable:${TEXTTEST_ROOT}/credit_card_validator.py
 filename_convention_scheme:standard
 
 # Expanded name to use for application
-full_name:credit card validator
+full_name:Credit Card Validator
 
