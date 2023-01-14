@@ -51,11 +51,16 @@ def read_basket(cart_file, catalog):
 
 
 def main(args):
+    # Arrange - read the csv files with test data
     catalog = read_catalog(Path("catalog.csv"))
     teller = Teller(catalog)
     read_offers(Path("offers.csv"), teller)
     basket = read_basket(Path("cart.csv"), catalog)
+
+    # Act - buy the items
     receipt = teller.checks_out_articles_from(basket)
+
+    # Print - print the receipt
     print(ReceiptPrinter().print_receipt(receipt))
 
 
